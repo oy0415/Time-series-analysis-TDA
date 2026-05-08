@@ -17,5 +17,4 @@
 
 ```text
 data/
-  raw/
-    household_power_consumption.txt
+  household_power_consumption.txt
