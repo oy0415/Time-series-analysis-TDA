@@ -1,0 +1,3 @@
+﻿model,normal_importance_sum,tda_importance_sum,tda_importance_rate_pct,tda_features_in_top10,tda_features_in_top20
+RandomForest,0.9070264691771074,0.09297353082289271,9.297353082289272,0,8
+GradientBoosting,0.9321925570352622,0.06780744296473776,6.780744296473777,0,8
