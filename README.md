@@ -525,3 +525,38 @@ TDA特徴量の有効性をより詳しく検証するためには、以下の�
 - TDA特徴量の有効性を事実ベースで評価する
 
 今回の結果ではTDA特徴量による明確な性能改善は確認されませんでしたが、TDAを時系列予測モデルに組み込む一連の実装手順は整理できています。
+
+---
+
+## References / 参考文献
+
+本プロジェクトでは、時系列データに対するSliding Window / Takens Embeddingと、
+Persistent Homologyによる特徴量抽出の考え方を理解するため、以下の文献を参考にした。
+
+1. Jose A. Perea and John Harer,  
+   *Sliding Windows and Persistence: An Application of Topological Methods to Signal Analysis*,  
+   Foundations of Computational Mathematics, 15, 799–838, 2015.  
+   https://arxiv.org/abs/1307.6188
+
+2. Jose A. Perea,  
+   *Topological Time Series Analysis*,  
+   Notices of the American Mathematical Society, 66(5), 686–694, 2019.  
+   https://arxiv.org/abs/1812.05143
+
+3. Guillaume Tauzin, Umberto Lupo, Lewis Tunstall, Julian Burella Pérez, Matteo Caorsi, Wojciech Reise, Anibal M. Medina-Mardones, Alberto Dassatti, Kathryn Hess,  
+   *giotto-tda: A Topological Data Analysis Toolkit for Machine Learning and Data Exploration*,  
+   NeurIPS 2020 Workshop on Topological Data Analysis and Beyond, 2021.  
+   https://arxiv.org/abs/2004.02551
+
+4. Robert Ghrist,  
+   *Barcodes: The Persistent Topology of Data*,  
+   Bulletin of the American Mathematical Society, 45(1), 61–75, 2008.  
+   https://www.ams.org/journals/bull/2008-45-01/S0273-0979-07-01191-3/
+
+### 補足
+TDA部分では、時系列データをSliding Window / Takens Embeddingによって点群化し、
+その点群に対してPersistent Homologyを計算する流れを採用した。
+この考え方は、Perea and Harer (2015) および Perea (2019) の
+Topological Time Series Analysis の枠組みを参考にしている。
+Persistent Homologyの計算およびPersistence Diagram / Barcodeの可視化には、
+PythonでTDAを機械学習パイプラインに組み込みやすい giotto-tda を利用した。
