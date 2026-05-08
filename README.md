@@ -58,28 +58,6 @@
 
 ---
 
-## リポジトリ構成
-
-```text
-Time-series-analysis-TDA/
-│
-├── README.md
-│
-├── data/
-│   └── household_power_consumption.txt        # 元データ（GitHub管理外を想定）
-│
-├── docs/
-│   ├── README_01_time_series_forecasting.md
-│   └── README_02_tda_feature_engineering_and_evaluation.md
-│
-├── notebooks/
-│   ├── 01_time_series_forecasting.ipynb
-│   └── 02_tda_feature_engineering_and_evaluation.ipynb
-│
-└── results/
-    ├── figures/
-    └── tables/
-```
 
 ### 各notebookの位置づけ
 
